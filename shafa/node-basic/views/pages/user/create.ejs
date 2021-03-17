@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<%- include('../components/navbar') %>
+	<a href="/users/create">Register</a>
+	<h1>Add User</h1>
+	<form action="/users" method="POST">
+		<div class="input-group">
+			<label>Name</label>
+			<input type="text" name="name">
+		</div>
+
+		<div class="input-group">
+			<label>Email</label>
+			<input type="text" name="email">
+		</div>
+
+		<button type="submit">Send</button>
+		<a href="/users">Kembali</a>
+	</form>
+	<footer>
+		<p>&copy;2020 Shafa Tasnim Narulita</p>
+	</footer>
+</body>
+</html>

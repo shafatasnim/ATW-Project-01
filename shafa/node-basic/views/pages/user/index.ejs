@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<%- include('../components/navbar') %>
+	<a href="/users/create">Register</a>
+	<h1>Daftar User (<%=users.length %>)</h1>
+	<ul>
+		<% if(users.length > 0) { %>
+		<% users.forEach(function(user) { %>
+			<li><a href='/users/1'><%=user.name.toUpperCase() %></li>
+		<% }) %>
+		<% } else { %>
+			<li>data user kosong.</li>
+		<% } %>
+	</ul>
+	<footer>
+		<p>&copy;2020 Shafa Tasnim Narulita</p>
+	</footer>
+</body>
+</html>
